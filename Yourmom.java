@@ -1,20 +1,23 @@
-class YourMom {
-enum YourMomsWeight {Fat,Fluffy,Anorexic,Normal,OH MEH GERSH IT HAS ITS OWN GRAVITY}
-YouMomsWeight weight;
-}
-public class Scale {
+int weight = 234;
+char Weight
+
 public static void main(String args[])
 {
 YourMom mom = new YourMom();
-if (weight == Fat);
-then (System.out.println("Yo momma need to lose some weight);
-if (weight == Fluffy);
-then (System.out.println("Yo momma aint fat, she be fluffy!");
-if (weight == Anorexic);
-then System.out.println("Yo momma needs some cheeze burgers");
-if (weight == Normal);
-then (System.out.println("Yo mommas just fine meh dude");
-if (weight == OH MEH GERSH IT HAS ITS OWN GRAVITY);
-then System.out.println("GET IT ON A TREADMILL");
+   if (weight >= 300) {
+      YourMom = 'HOLY CHEESEBURGERS YOUR FAT';
    }
+else if (weight >= 250) {
+   YourMom = 'Fat';
+  }
+else if (weight >= 200) {
+   YourMom = 'Fluffy';
 }
+   else if (weight >= 150) {
+      YourMom = 'Normal';
+   }
+   else if (weight <=150) {
+      YourMom = 'Anorexic';
+   }
+   System.out.println("Weight = " + weight); 
+ }

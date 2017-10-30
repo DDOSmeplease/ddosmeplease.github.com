@@ -9,8 +9,8 @@ static double aa = c + d;
 static double bb = f + g;
 static double aaa = b * aa;
 static double bbb = a + aaa;
-static double f1 = abs(aaa);
-  static double f2 = abs(bb);
+static double f1 = Math.abs(aaa);
+  static double f2 = Math.abs(bb);
 
 public static void main (String args[]) {
 

@@ -9,9 +9,14 @@ static double aa = c + d;
 static double bb = f + g;
 static double aaa = b * aa;
 static double bbb = a + aaa;
-
+static double f1 = abs(aaa);
+  static double f2 = abs(bb)
 
 public static void main (String args[]) {
-System.out.println(abs(aaa) -  abs(bb) );
+
+  
+  
+  
+  System.out.println(f1 - f2 );
 }
 }

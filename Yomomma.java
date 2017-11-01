@@ -13,7 +13,7 @@ public Dog(int Age) {
 System.out.println("Your dog is" + Age + "years old");
 }
 public Dog(double Weight) {
-System.out.println("Your dog weighs" + Weight + "pounds")
+System.out.println("Your dog weighs" + Weight + "pounds");
 }
 public static void main (String args[]) {
 Dog myDog = new Dog ("Sparky");

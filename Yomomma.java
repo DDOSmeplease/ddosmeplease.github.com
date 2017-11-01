@@ -7,7 +7,7 @@ public Dog(String Breed) {
 System.out.println("Your dogs breed is" + Breed);
 }
 public Dog(String Color) {
-System.out.print.ln("Your dog is" + Color);
+System.out.println("Your dog is" + Color);
 }
 public Dog(int Age) {
 System.out.println("Your dog is" + Age + "years old");
@@ -17,7 +17,7 @@ System.out.println("Your dog weighs" + Weight + "pounds");
 }
 public static void main (String args[]) {
 Dog myDog = new Dog ("Sparky");
-myDog.setBreed("Golden Retreiver);
+myDog.setBreed("Golden Retreiver");
                myDog.getBreed();
 myDog.setColor("Golden Brown");
                myDog.getColor();

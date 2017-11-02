@@ -1,7 +1,5 @@
 public class Dog{
 
-int Age;
-double Weight;
 
 public Dog(String Breed) {
 System.out.println("Your dogs breed is" + Breed);

@@ -46,5 +46,10 @@ myBob.getweight();
 myBob.getage();
 myBob.getjob();
 myBob.getsalary();
+  System.out.println(myBob.getheight);
+  System.out.println(myBob.getweight);
+  System.out.println(myBob.getage);
+  System.out.println(myBob.getjob);
+  System.out.println(myBob.getsalary);
   }
 }  

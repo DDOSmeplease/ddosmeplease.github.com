@@ -3,6 +3,7 @@ public class Dog {
   String name, color, breed;
   int age;
   double weight;
+  double height;
   
   public Dog(String name) {
     System.out.println("Your dog\'s name is " + name);
@@ -28,6 +29,10 @@ public class Dog {
     System.out.println("Your dog weighs " + weight + " pounds");
     this.weight = weight;
   }
+  public void setHeight(double height) {
+      System.out.println("Your dog is" + height + "feet tall");
+    this.height = height;
+  }
   
   public static void main (String args[]) {
     Dog myDog = new Dog ("Sparky");
@@ -35,10 +40,12 @@ public class Dog {
     myDog.setColor("Golden Brown");
     myDog.setAge(4);
     myDog.setWeight(50.12);
+    myDog.setHeight(4.6);
     System.out.println(myDog.name);
     System.out.println(myDog.breed);
     System.out.println(myDog.color);
     System.out.println(myDog.age);
     System.out.println(myDog.weight);
+    System.out.println(myDog.height);
   }
 }

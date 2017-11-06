@@ -1,9 +1,8 @@
 public class Bob {
-String name;
+
 double height;
 double weight;
 int age;
-String job;
 double salary;
 
 public void Bob(String name) {

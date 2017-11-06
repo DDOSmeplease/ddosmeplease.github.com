@@ -1,55 +1,50 @@
-public class Bob {
 
+public class Bob {
+String name, job;
 double height;
 double weight;
 int age;
 double salary;
 
-public void Bob(String name) {
+public Bob(String name) {
+System.out.println("Bob's name is" + name);
 this.name = name;
 }
 
-public void height {
+public void setHeight(double height) {
 System.out.println("Bob is" + height + "feet tall");
 this.height = height;
 }
 
-public void weight {
+public void setWeight(double weight) {
 System.out.println("Bob weighs" + weight + "pounds");
 this.weight = weight;
 }
 
-public void age {
-System.out.println(Bob is" + age + "years old");
+public void setAge(int age) {
+System.out.println("Bob is" + age + "years old");
 this.age = age;
 }
-
-public void job(String job) {
+public void setJob(String job) {
 System.out.println("Bob works as a" + job);
 this.job = job;
 }
-
-public void salary {
+public void setSalary(double salary) {
 System.out.println("Bob makes" + salary + "an hour");
 this.salary = salary;
 }
-
 public static void main(String args[]) {
-Bob myBob = newBob("Bob")
-myBob.setheight(5.6);
-myBob.setweight(200.12);
-myBob.setage(28);
-myBob.setjob("Nigerian Prince");
-myBob.setsalary(1000000);
-myBob.getheight();
-myBob.getweight();
-myBob.getage();
-myBob.getjob();
-myBob.getsalary();
-  System.out.println(myBob.getheight);
-  System.out.println(myBob.getweight);
-  System.out.println(myBob.getage);
-  System.out.println(myBob.getjob);
-  System.out.println(myBob.getsalary);
+Bob myBob = new Bob ("Bob");
+myBob.setHeight(5.6);
+myBob.setWeight(200.12);
+myBob.setAge(28);
+myBob.setJob("Nigerian Prince");
+myBob.setSalary(1000000);
+  System.out.println(myBob.height);
+  System.out.println(myBob.weight);
+  System.out.println(myBob.age);
+  System.out.println(myBob.job);
+  System.out.println(myBob.salary);
   }
 }  
+  

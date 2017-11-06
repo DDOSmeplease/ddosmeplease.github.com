@@ -29,10 +29,7 @@ myDuck.setAge(4);
 myDuck.setWeight(30.55);
 myDuck.setHeight(2.11);
 myDuck.setColor("White");
-  System.out.println(myDuck.age);
-  System.out.println(myDuck.color);
-  System.out.println(myDuck.weight);
-  System.out.println(myDuck.height);
+ 
   }
 }
 

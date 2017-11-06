@@ -7,30 +7,30 @@ int age;
 double salary;
 
 public Bob(String name) {
-System.out.println("Bob's name is" + name);
+System.out.println("Bob's name is " + name);
 this.name = name;
 }
 
 public void setHeight(double height) {
-System.out.println("Bob is" + height + "feet tall");
+System.out.println("Bob is " + height + " feet tall");
 this.height = height;
 }
 
 public void setWeight(double weight) {
-System.out.println("Bob weighs" + weight + "pounds");
+System.out.println("Bob weighs " + weight + " pounds");
 this.weight = weight;
 }
 
 public void setAge(int age) {
-System.out.println("Bob is" + age + "years old");
+System.out.println("Bob is " + age + " years old");
 this.age = age;
 }
 public void setJob(String job) {
-System.out.println("Bob works as a" + job);
+System.out.println("Bob works as a " + job);
 this.job = job;
 }
 public void setSalary(double salary) {
-System.out.println("Bob makes" + salary + "an hour");
+System.out.println("Bob makes " + salary + " an hour");
 this.salary = salary;
 }
 public static void main(String args[]) {

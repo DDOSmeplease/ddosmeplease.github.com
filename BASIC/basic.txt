@@ -1,6 +1,0 @@
-CLS
-ANUMBER% = 78
-ASTRING$ = "John is ANUMBER% years old."
-PRINT aString$
-SLEEP
-END

@@ -44,19 +44,17 @@ Print
 Sleep
 
 If usernameInput2 = usernameInput then
- Print "Your username is correct."
  Sleep
 Else 
  Print "Incorrect username or password, please try again."
  Sleep
 End If
 
-Input "Please enter your password" , passwordInput2
-Sleep
+
 
 
 If passwordInput2 = passwordInput then
- print "Your password is correct."
+ print "Your login credintials are correct."
  Sleep
 Else  
  Print "Incorrect password, please try again."

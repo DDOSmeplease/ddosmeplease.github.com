@@ -59,7 +59,6 @@ If passwordInput2 = passwordInput then
  print "Your password is correct."
  Sleep
 Else  
- passwordInput2 = passwordInput then
  Print "Incorrect password, please try again."
  Sleep
 End If

@@ -9,6 +9,6 @@ Print
 Print "Ok " ; nameInput ; "." " Your username has been set to " ; usernameInput ;
 Input "What would you like your password to be?" , passwordInput
 Print 
-Print "Ok " ; nameInput ; "Your password has been set."
+Print "Ok " ; nameInput ; ". " "Your password has been set."
 
 

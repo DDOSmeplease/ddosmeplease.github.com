@@ -109,4 +109,8 @@ Print
 Sleep
 
 If Stats = 1 then
- Print "You have " + Attack
+ Print "You have " + Attack2 + " attack and " + Defence2 + " defence. Press ENTER to continue."
+ Sleep
+Else 
+ Print " "
+End If

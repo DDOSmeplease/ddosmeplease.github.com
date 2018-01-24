@@ -20,6 +20,12 @@ Dim UMoney as Integer
 Dim MonsterAtt as String
 Dim MonsterDef as String
 Dim Q3 as Integer
+Dim Hat as Integer
+Dim Dagger as Integer
+Dim HatCost as Integer
+Dim DaggerCost as Integer
+Dim S1 as Integer
+Dim B1 as Integer
 
 Money = "0"
 Health = "100"
@@ -33,6 +39,10 @@ UHealth = 100
 UMoney = 0
 MonsterAtt = "2"
 MonsterDef = "0"
+Hat = 2
+Dagger = 2
+HatCost = 3
+DaggerCost = 3
 
 
 Input "Hello, what is your name?" , nameInput
@@ -170,5 +180,35 @@ Input " " , Q3
 Print
 Sleep
 
+If Q3 = 1 then
+ Print "Items for sale: Dagger: 3 gold, Hat: 3 gold. Press ENTER to continue"
+ Sleep
+ 
+ Print "Would you like to buy something? 1 for yes, 2 for no."
+ 
+ Input " " , S1
+ Print 
+ Sleep
+ 
+Else 
+ Print "Ok, moving on. Press ENTER to continue."
+ Sleep
+End If
 
+If S1 = 1 then
+ Print "Ok what would you like? Press 1 for Dagger, 2 for Hat, and 3 to Exit."
+ Input " " , B1
+ Print 
+ Sleep
+Else 
+ Print " "
+End If
+
+If B1 = 1 then
+ Print "Ok, thanks for shoping!"
+ Money = Money - 3
+ Sleep
+
+ 
+ 
 

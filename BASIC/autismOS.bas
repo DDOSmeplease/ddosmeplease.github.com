@@ -5,6 +5,7 @@ Dim passwordInput2 as String
 Dim usernameInput2 as String
 Dim passwordInput3 as String
 Dim Q1 as Integer
+Dim Money as Integer
 
 Input "Hello, what is your name?" , nameInput
 Print
@@ -82,6 +83,11 @@ Else
  End 
 End If 
 
+Print "You are an Explorer crossing into previously unknown territories. There are many different 
+crossroads, and each decision will affect your survival. Press ENTER to continue."
+Sleep
 
+Print "Turn 1. You have " + Money + " dollars. Press ENTER to continue."
+Sleep
 
 

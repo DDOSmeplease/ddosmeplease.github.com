@@ -19,6 +19,7 @@ Dim UHealth as Double
 Dim UMoney as Integer
 Dim MonsterAtt as String
 Dim MonsterDef as String
+Dim Q3 as Integer
 
 Money = "0"
 Health = "100"
@@ -162,3 +163,12 @@ If Stats = 1 then
 Else 
  Print " "
 End If
+
+Print "You encountered a shop keeper! Would you like to shop? 1 for yes, 2 for no."
+
+Input " " , Q3
+Print
+Sleep
+
+
+

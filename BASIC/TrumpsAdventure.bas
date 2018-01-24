@@ -59,6 +59,9 @@ Else
  End 
 End If 
 
+Print "Welcome to Trump's Adventure! Press ENTER to continue."
+Sleep
+
 Print "You are an Explorer crossing into previously unknown territories. There are many different crossroads, and each decision will affect your survival. Press ENTER to continue."
 Sleep
 

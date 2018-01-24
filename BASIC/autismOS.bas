@@ -206,8 +206,14 @@ End If
 
 If B1 = 1 then
  Print "Ok, thanks for shoping!"
- Money = Money - 3
+ UMoney = UMoney - 3
  Sleep
+ElseIf B1 = 2 then 
+ Print "Ok thanks for shopping!"
+ UMoney = UMoney - 3
+Else 
+ Print "Ok, sorry you changed your mind! Come back later!"
+EndIf
 
  
  

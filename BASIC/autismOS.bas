@@ -9,11 +9,16 @@ Dim Money as String
 Dim Health as String
 Dim Attack as Integer
 Dim Defence as Integer
+Dim Stats as Integer
+Dim Attack2 as String
+Dim Defence2 as String
 
 Money = "0"
 Health = "100"
 Attack = 1
 Defence = 1
+Attack2 = "1"
+Defence2 = "1"
 
 Input "Hello, what is your name?" , nameInput
 Print
@@ -97,4 +102,11 @@ Sleep
 Print "Turn 1. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
 Sleep
 
+Print "Would you like to view your stats? 1 is yes, 2 is no."
 
+Input " " , Stats
+Print
+Sleep
+
+If Stats = 1 then
+ Print "You have " + Attack

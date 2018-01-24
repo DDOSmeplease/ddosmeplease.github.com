@@ -3,6 +3,7 @@ Dim usernameInput as String
 Dim passwordInput as String
 Dim passwordInput2 as String 
 Dim usernameInput2 as String
+
 Input "Hello, what is your name?" , nameInput
 Print
 

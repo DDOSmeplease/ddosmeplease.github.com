@@ -12,6 +12,13 @@ Dim Defence as Integer
 Dim Stats as Integer
 Dim Attack2 as String
 Dim Defence2 as String
+Dim MonsterAT as Integer
+Dim MonsterDF as Integer
+Dim Q2 as Integer
+Dim UHealth as Integer
+Dim UMoney as Integer
+Dim MonsterAtt as String
+Dim MonsterDef as String
 
 Money = "0"
 Health = "100"
@@ -19,6 +26,13 @@ Attack = 1
 Defence = 1
 Attack2 = "1"
 Defence2 = "1"
+MonsterAT = 2
+MonsterDF = 0
+UHealth = 100
+UMoney = 0
+MonsterAtt = "2"
+MonsterDef = "0"
+
 
 Input "Hello, what is your name?" , nameInput
 Print
@@ -66,7 +80,7 @@ If usernameInput2 = usernameInput then
  Print " "
  Sleep
 Else 
- Print "Incorrect username or password, please try again."
+ Print ""
  Sleep
 End If
 
@@ -76,7 +90,7 @@ End If
 If passwordInput2 = passwordInput then
  Print "Your login credintials are correct."
 Else  
- Print "Incorrect password, please try again."
+ Print "Incorrect username or password, please try again."
  Sleep
 End If
 
@@ -113,4 +127,22 @@ If Stats = 1 then
  Sleep
 Else 
  Print " "
+End If
+
+Print "You encounter a fork in the road! 1 for left, 2 for right."
+
+Input " " , Q2
+Print 
+Sleep
+
+If Q2 = 1 then
+ Print "You find 5 dollars on the side of the road! +5 money."
+ Money = "5"
+ UMoney = UMoney + 5
+Else 
+ Print "You encounter a monster! It attacks!"
+ UHealth = Defence + UHealth - MonsterAT
+ Health = Defence2 + Health - MonsterAtt
+ 
+ Print "You lost " + Health + " health points against the monster!"
 End If

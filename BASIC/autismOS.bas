@@ -3,6 +3,8 @@ Dim usernameInput as String
 Dim passwordInput as String
 Dim passwordInput2 as String 
 Dim usernameInput2 as String
+Dim passwordInput3 as String
+
 
 Input "Hello, what is your name?" , nameInput
 Print
@@ -37,14 +39,17 @@ Input "Please enter your username." , usernameInput2
 Print
 Sleep
 
+Do 
 Print "Please enter your password" 
 Sleep
 
 Input "Please enter your password." , passwordInput2
 Print
 Sleep
+Loop Until passwordInput2 = passwordInput
 
 If usernameInput2 = usernameInput then
+ Print " "
  Sleep
 Else 
  Print "Incorrect username or password, please try again."

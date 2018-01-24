@@ -4,7 +4,7 @@ Dim passwordInput as String
 Dim passwordInput2 as String 
 Dim usernameInput2 as String
 Dim passwordInput3 as String
-
+Dim Q1 as Integer
 
 Input "Hello, what is your name?" , nameInput
 Print
@@ -60,10 +60,28 @@ End If
 
 
 If passwordInput2 = passwordInput then
- print "Your login credintials are correct."
- Sleep
+ Print "Your login credintials are correct."
 Else  
  Print "Incorrect password, please try again."
  Sleep
 End If
+
+Print "You have sucsessfully logged into to autismOS! Press enter to continue."
+Sleep
+
+Print "Would you like to play a game? 1 is yes, 2 is no."
+
+Input "Would you like to play a game? 1 is yes, 2 is no." , Q1
+Print
+Sleep 
+
+If Q1 = 1 then
+ Print "Ok! Loading that right up for you!"
+Else
+ Print "Ok. Shutting down."
+ End 
+End If 
+
+
+
 

@@ -15,7 +15,7 @@ Dim Defence2 as String
 Dim MonsterAT as Integer
 Dim MonsterDF as Integer
 Dim Q2 as Integer
-Dim UHealth as Integer
+Dim UHealth as Double
 Dim UMoney as Integer
 Dim MonsterAtt as String
 Dim MonsterDef as String
@@ -141,8 +141,24 @@ If Q2 = 1 then
  UMoney = UMoney + 5
 Else 
  Print "You encounter a monster! It attacks!"
- UHealth = Defence + UHealth - MonsterAT
- Health = Defence2 + Health - MonsterAtt
+ UHealth = 98
+ Health = "98"
  
- Print "You lost " + Health + " health points against the monster!"
+ Print "Oh no! You lost 2 health points! "
+End If
+
+Print "Turn 2. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
+Sleep
+
+Print "Would you like to view your stats? 1 is yes, 2 is no."
+
+Input " " , Stats
+Print
+Sleep
+
+If Stats = 1 then
+ Print "You have " + Attack2 + " attack and " + Defence2 + " defence. Press ENTER to continue."
+ Sleep
+Else 
+ Print " "
 End If

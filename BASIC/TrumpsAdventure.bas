@@ -27,6 +27,7 @@ Dim DaggerCost as Integer
 Dim S1 as Integer
 Dim B1 as Integer
 Dim Q4 as Integer
+Dim Q5 as Integer
 
 Money = "0"
 Health = "100"
@@ -208,6 +209,45 @@ Else
  Print "You have " + Health + " health left."
 EndIf 
 EndIf
+
+Print "Turn 4. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
+Sleep
+
+Print "Would you like to view your stats? 1 is yes, 2 is no."
+
+Input " " , Stats
+Print
+Sleep
+
+If Stats = 1 then
+ Print "You have " + Attack2 + " attack and " + Defence2 + " defence. Press ENTER to continue."
+ Sleep
+Else 
+ Print " "
+End If
+Sleep
+
+Print "As you move along, you find that it's getting to dark to see. You start to look for someplace to rest, and find 2 viable options. 1 for Option One, 2 for Option Two."
+
+Input " " , Q5
+Print 
+Sleep
+
+If Q5 = 1 then
+ Print "You start to put up your tent, and find 10 dollars on the ground! Lucky find!"
+If UMoney = 0 then
+ UMoney = 10
+ Money = "10"
+ElseIf UMoney = 5 then
+ UMoney = 15
+ Money = "15"
+ElseIf UMoney = 2 then
+ UMoney = 12
+ Money = "12"
+Else 
+ Print " "
+EndIf
+ EndIf
 
  
 

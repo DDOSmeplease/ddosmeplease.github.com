@@ -146,16 +146,47 @@ Else
 End If
 
 If B1 = 1 then
+If UMoney > 3 then
  Print "Ok, thanks for shoping!"
  UMoney = UMoney - 3
+ Attack2 = "3"
+ Attack = 3
+Else 
+ Print "Sorry you don't have enough money!"
+EndIf
+ 
+
  Sleep
 ElseIf B1 = 2 then 
+If UMoney > 3 then
  Print "Ok thanks for shopping!"
  UMoney = UMoney - 3
+ Defence2 = "3"
+ Defence = 3
+ Money = "2"
+Else 
+ Print "Sorry, but you don't have enough money for that, please come back later!"
+EndIf
 Else 
  Print "Ok, sorry you changed your mind! Come back later!"
 EndIf
 
- 
+Print "Turn 3. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
+Sleep
+
+Print "Would you like to view your stats? 1 is yes, 2 is no."
+
+Input " " , Stats
+Print
+Sleep
+
+If Stats = 1 then
+ Print "You have " + Attack2 + " attack and " + Defence2 + " defence. Press ENTER to continue."
+ Sleep
+Else 
+ Print " "
+End If
+
+
  
 

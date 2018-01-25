@@ -26,6 +26,7 @@ Dim HatCost as Integer
 Dim DaggerCost as Integer
 Dim S1 as Integer
 Dim B1 as Integer
+Dim Q4 as Integer
 
 Money = "0"
 Health = "100"
@@ -186,7 +187,27 @@ If Stats = 1 then
 Else 
  Print " "
 End If
+Sleep
 
+Print "You come across a river. You can either cross or look for a way around. What would you like to do? 1 for cross, 2 for look for a way around."
+
+Input " " , Q4
+Sleep
+
+If Q4 = 1 then
+ Print "You crossed safely!"
+Else
+ Print "You managed to find a way across, but you took 5 damage in the process!"
+If Q1 = 1 then
+ Health = "95"
+ UHealth = 95
+ Print "You have " + Health + " health left!"
+Else 
+ Health = "93"
+ Uhealth = 93
+ Print "You have " + Health + " health left."
+EndIf 
+EndIf
 
  
 

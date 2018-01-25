@@ -249,5 +249,8 @@ Else
 EndIf
  EndIf
 
+If Q5 = 2 then
+ Print "You set up camp without any problems and lay down to rest for the night."
+EndIf
  
 

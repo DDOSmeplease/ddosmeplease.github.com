@@ -28,6 +28,7 @@ Dim S1 as Integer
 Dim B1 as Integer
 Dim Q4 as Integer
 Dim Q5 as Integer
+Dim Q6 as Integer
 
 Money = "0"
 Health = "100"
@@ -67,7 +68,7 @@ Sleep
 Print "You are an Explorer crossing into previously unknown territories. There are many different crossroads, and each decision will affect your survival. Press ENTER to continue."
 Sleep
 
-Print "Turn 1. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
+Print "Day 1, turn 1. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
 Sleep
 
 Print "Would you like to view your stats? 1 is yes, 2 is no."
@@ -101,7 +102,7 @@ Else
  Print "Oh no! You lost 2 health points! "
 End If
 
-Print "Turn 2. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
+Print "Day 1, turn 2. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
 Sleep
 
 Print "Would you like to view your stats? 1 is yes, 2 is no."
@@ -173,7 +174,7 @@ Else
  Print "Ok, sorry you changed your mind! Come back later!"
 EndIf
 
-Print "Turn 3. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
+Print "Day 1, turn 3. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
 Sleep
 
 Print "Would you like to view your stats? 1 is yes, 2 is no."
@@ -210,7 +211,7 @@ Else
 EndIf 
 EndIf
 
-Print "Turn 4. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
+Print "Day 1, turn 4. You have " + Money + " dollars. You have " + Health + " health points.  Press ENTER to continue."
 Sleep
 
 Print "Would you like to view your stats? 1 is yes, 2 is no."
@@ -250,7 +251,53 @@ EndIf
  EndIf
 
 If Q5 = 2 then
- Print "You set up camp without any problems and lay down to rest for the night."
+ Print "You set up camp without any problems and lay down to rest for the night. Press ENTER to continue."
 EndIf
- 
+Print
+Sleep
+
+Print "Day 2, turn 1. You leave from your camp and set off for more adventure! Press ENTER to continue."
+Print
+Sleep
+
+Print "As you continue moving down the trail, you see a outlaws' camp off in the distance. You come to the conclusion that you have 2 options."
+Print "You decide that you can either try to sneak through the camp or go around. Press 1 to sneak through or 2 to look for away around."
+
+Input " " , Q6
+Print 
+Sleep
+
+If Q6 = 1 then
+ If Attack > 1 then
+  Print "You sucsessfully manage to sneak through the outlaws' camp unscathed!"
+  Print
+  Sleep
+  ElseIf Defence > 1 then
+   Print "You trip on a rock, alerting them of your presence, but you escaped unharmed."
+   Print 
+   Sleep
+  Else 
+   Print "You were caught sneaking by the salon, and were attacked merciously! You lose 10 health!"
+    If UHealth = 100 then
+     UHealth = 90
+     Health = "90"
+      ElseIf UHealth = 98 then
+        Uhealth = 88
+        Health = "88"
+         ElseIf Uhealth = 95 then
+          UHealth = 85
+          Health = "85"
+           Else 
+            Uhealth = 83
+            Health = "83"
+             End If
+             End If
+ If Q6 = 2 then
+  Print "You manage to find a path around and get back on trail."
+  Print 
+  Sleep
+ End If
+End If
+
+          
 

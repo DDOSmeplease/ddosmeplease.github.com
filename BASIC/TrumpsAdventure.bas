@@ -29,6 +29,9 @@ Dim B1 as Integer
 Dim Q4 as Integer
 Dim Q5 as Integer
 Dim Q6 as Integer
+Dim S2 as Integer
+Dim B2 as Integer
+Dim PotionCost as Integer
 
 Money = "0"
 Health = "100"
@@ -46,6 +49,7 @@ Hat = 2
 Dagger = 2
 HatCost = 3
 DaggerCost = 3
+PotionCost = 10
 
 
 
@@ -260,6 +264,20 @@ Print "Day 2, turn 1. You leave from your camp and set off for more adventure! P
 Print
 Sleep
 
+Print "Would you like to view your stats? 1 is yes, 2 is no."
+
+Input " " , Stats
+Print
+Sleep
+
+If Stats = 1 then
+ Print "You have " + Attack2 + " attack and " + Defence2 + " defence. Press ENTER to continue."
+ Sleep
+Else 
+ Print " "
+End If
+Sleep
+
 Print "As you continue moving down the trail, you see a outlaws' camp off in the distance. You come to the conclusion that you have 2 options."
 Print "You decide that you can either try to sneak through the camp or go around. Press 1 to sneak through or 2 to look for away around."
 
@@ -299,5 +317,49 @@ If Q6 = 1 then
  End If
 End If
 
-          
+Print "Day 2, turn 2. Press ENTER to continue."
+Print
+Sleep
 
+Print "Would you like to view your stats? 1 is yes, 2 is no."
+
+Input " " , Stats
+Print
+Sleep
+
+If Stats = 1 then
+ Print "You have " + Attack2 + " attack and " + Defence2 + " defence. Press ENTER to continue."
+ Sleep
+Else 
+ Print " "
+End If
+Sleep
+
+Print "You see an old man on the side of the road, and he looks as if he's trying to sell you something."
+Print "Press 1 if you would like to shop, 2 if you want to keep moving."
+
+input " " , S2
+Print
+Sleep
+
+If S2 = 1 then 
+ Print "As you approach the old man, you see he has some kind of pot filled with an unknown substance."
+ Print "The sign says 15 GOLD. No clue what this is, but take it or leave it."
+ Print "Would you like to buy it from the old man? 1 is yes, 2 is no."
+ Input " " , B2
+  If B2 = 1 then
+   If UMoney = 15 then 
+    UMoney = 0
+    Money = "0"
+    Print "The old man grunts as you take a drink of the odd drink. You drink it and feel invigorated!" 
+    UHealth = 100
+    Health = "100"
+    Print "You now have full health!"
+   Else 
+    Print "You don't have enough cash! You decide to keep on moving."
+  End If
+ End If
+End If
+ If B2 = 2 then
+  Print "You decide to continue moving down the path."
+End If

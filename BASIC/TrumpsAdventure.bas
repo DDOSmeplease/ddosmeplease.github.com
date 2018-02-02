@@ -32,6 +32,7 @@ Dim Q6 as Integer
 Dim S2 as Integer
 Dim B2 as Integer
 Dim PotionCost as Integer
+Dim Q7 as Integer
 
 Money = "0"
 Health = "100"
@@ -363,3 +364,34 @@ End If
  If B2 = 2 then
   Print "You decide to continue moving down the path."
 End If
+
+Print "Day 2, turn 3. You leave from your camp and set off for more adventure! Press ENTER to continue."
+Print
+Sleep
+
+Print "Would you like to view your stats? 1 is yes, 2 is no."
+
+Input " " , Stats
+Print
+Sleep
+
+If Stats = 1 then
+ Print "You have " + Attack2 + " attack and " + Defence2 + " defence. Press ENTER to continue."
+ Sleep
+Else 
+ Print " "
+End If
+Sleep
+
+Print "A storm is brewing off in the distance, and it looks as if it is heading your way. Do you continue?"
+Print "1 to continue, 2 to stop."
+
+Input " " , Q7
+Print
+Sleep
+
+If Q7 = 1 then
+ Print "You decide to keep pushing forward, but you end up stuck in the middle of the storm with no shelter!"
+ Print "You are forced to wait out the storm under the cover of some trees, but it is not sufficent to prevent damage."
+ Print "You take 15 damage."
+ 
